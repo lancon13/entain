@@ -1,0 +1,54 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+    "name": "Node.js & TypeScript",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers-extra/features/pnpm:2": {}
+    },
+    "remoteEnv": {
+        "PNPM_HOME": "/pnpm",
+        "PATH": "${containerEnv:PNPM_HOME}:${containerEnv:PATH}"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "antfu.iconify",
+                "antfu.unocss",
+                "bbugh.change-color-format",
+                "bourhaouta.tailwindshades",
+                "bradlc.vscode-tailwindcss",
+                "bradlc.vscode-tailwindcss",
+                "bruceyuhb.hsl-preview",
+                "codezombiech.gitignore",
+                "dariofuzinato.vue-peek",
+                "dbaeumer.vscode-eslint",
+                "denoland.vscode-deno",
+                "hossaini.quasar-intellisense",
+                "lihui.vs-color-picker",
+                "ms-azuretools.vscode-containers",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode.live-server",
+                "naumovs.color-highlight",
+                "nize.oklch-preview",
+                "pflannery.vscode-versionlens",
+                "saoudrizwan.claude-dev",
+                "shyykoserhiy.git-autoconfig",
+                "sibiraj-s.vscode-scss-formatter",
+                "starbist.oklchanger",
+                "steoates.autoimport",
+                "streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-australian-english",
+                "tombonnike.vscode-status-bar-format-toggle",
+                "vue.volar",
+                "wix.vscode-import-cost",
+                "yoavbls.pretty-ts-errors",
+                "yrm.vscode-vueuse"
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "postCreateCommand": "npm install -g @google/gemini-cli"
+}

@@ -1,0 +1,108 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": [
+        "source.fixAll.eslint"
+    ],
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "tsconfig.json": "tsconfig.*.json, env.d.ts",
+        "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
+        "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig"
+    },
+    "eslint.useFlatConfig": true,
+    "eslint.debug": false,
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+        {
+            "directory": "./",
+            "changeProcessCWD": true
+        }
+    ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "vue"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "livePreview.portNumber": 8200,
+    "files.associations": {
+        "*.json": "jsonc",
+        "*.css": "tailwindcss"
+    },
+    "css.customData": [
+        ".vscode/tailwind.json"
+    ],
+    "[jsonc]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never",
+            "source.sortImports": "never",
+            "source.fixAll.eslint": "never",
+            "source.fixAll.ts": "never"
+        },
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never",
+            "source.sortImports": "never",
+            "source.fixAll.eslint": "never",
+            "source.fixAll.ts": "never"
+        },
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never",
+            "source.sortImports": "never",
+            "source.fixAll.eslint": "never",
+            "source.fixAll.ts": "never"
+        },
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never",
+            "source.sortImports": "never",
+            "source.fixAll.eslint": "never",
+            "source.fixAll.ts": "never"
+        },
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[vue]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "never",
+            "source.sortImports": "never",
+            "source.fixAll.eslint": "never",
+            "source.fixAll.ts": "never"
+        },
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "cSpell.words": [
+        "autodocs",
+        "automations",
+        "entain",
+        "fantasticon",
+        "hoverable",
+        "Neds",
+        "Nunito",
+        "pinia",
+        "swipeable",
+        "Uncapitalize",
+        "upserting",
+        "vueuse",
+        "whispli"
+    ]
+}

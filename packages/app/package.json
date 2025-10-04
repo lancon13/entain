@@ -1,0 +1,59 @@
+{
+    "name": "@entain/app",
+    "version": "0.0.1",
+    "description": "Entain App",
+    "productName": "Entain App",
+    "author": "Gordon Cheng <lancon13@gmail.com>",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "lint": "eslint -c ./eslint.config.js \"./src*/**/*.{ts,js,cjs,mjs,vue}\"",
+        "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+        "test": "vitest",
+        "dev": "quasar dev",
+        "build": "quasar build",
+        "icons": "icongenie generate -i ./src/assets/logo.png -b ./src/assets/splash-logo.png  -m all --skip-trim --theme-color #73BA9B",
+        "postinstall": "quasar prepare"
+    },
+    "dependencies": {
+        "@quasar/extras": "^1.17.0",
+        "@quasar/icongenie": "^4.0.0",
+        "@tailwindcss/vite": "^4.1.11",
+        "@vueuse/components": "^13.5.0",
+        "@vueuse/core": "^13.5.0",
+        "@vueuse/router": "^13.5.0",
+        "dayjs": "^1.11.13",
+        "es-toolkit": "^1.39.7",
+        "pinia": "^3.0.3",
+        "pinia-plugin-persistedstate": "^4.4.1",
+        "quasar": "^2.18.2",
+        "tailwindcss": "^4.1.11",
+        "vue": "^3.5.18",
+        "vue-forward-slots": "^5.0.4",
+        "vue-i18n": "^11.1.11",
+        "vue-router": "^4.5.1",
+        "zod": "^4.0.5"
+    },
+    "devDependencies": {
+        "@intlify/unplugin-vue-i18n": "^6.0.8",
+        "@pinia/testing": "^1.0.2",
+        "@quasar/app-vite": "^2.3.0",
+        "@quasar/vite-plugin": "^1.10.0",
+        "@types/node": "^24.1.0",
+        "@vitejs/plugin-vue": "^6.0.1",
+        "@vitest/ui": "^3.2.4",
+        "@vue/test-utils": "^2.4.6",
+        "autoprefixer": "^10.4.2",
+        "globals": "^16.3.0",
+        "jsdom": "^27.0.0",
+        "typescript": "~5.8.3",
+        "vite-plugin-checker": "^0.10.1",
+        "vitest": "^3.2.4",
+        "vue-tsc": "^3.0.3"
+    },
+    "engines": {
+        "node": "^28 || ^26 || ^24 || ^22 || ^20 || ^18",
+        "npm": ">= 6.13.4",
+        "yarn": ">= 1.21.1"
+    }
+}
